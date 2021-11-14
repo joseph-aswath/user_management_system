@@ -29,7 +29,8 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")));
 
 
 app.get('/',(req,res)=>{
-    res.send("user management system");
+    //res.send("user management system");
+    res.render('index');  
 });
 
 app.listen(PORT,()=>{console.log(`server is running on http://localhost:${PORT}`)});
