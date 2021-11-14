@@ -99,3 +99,47 @@ table{
     text-align: center;
     border-top: 1px solid var(--border);
 }
+
+.table td > a.btn {
+    padding: 0.32em 1em;
+    font-size: 1.1em;
+    margin: 0.2em;
+}
+
+.table tr:hover {
+    background-color: lightblue ;
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color: white;
+    background-color: var(--dark);
+    border-color: var(--light);
+}
+/* RESPONSIVE DESIGN
+ @media only screen and (max-width: 1024px) {
+     table,thead,tbody,th,td,tr {
+        display: block;      
+     }
+ }
+
+ thead tr{
+    position : absolute;
+    top : -9999px;
+    left: -9999px;
+ }
+
+ tr{
+    border: 1px solid var(--border);
+ }
+
+ td{
+     border: none;
+     position: relative;
+ }
+ */
+
+   
