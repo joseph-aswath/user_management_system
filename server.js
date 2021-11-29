@@ -27,11 +27,9 @@ app.use('/css',express.static(path.resolve(__dirname,"assets/css")));
 app.use('/img',express.static(path.resolve(__dirname,"assets/img")));
 app.use('/js',express.static(path.resolve(__dirname,"assets/js")));
 
+//load routers 
+app.use('/', require('./server/routes/router'));
 
-app.get('/',(req,res)=>{
-    //res.send("user management system");
-    res.render('index');  
-});
 
 app.listen(PORT,()=>{console.log(`server is running on http://localhost:${PORT}`)});
 
