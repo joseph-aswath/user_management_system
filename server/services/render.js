@@ -1,3 +1,5 @@
-exports.homeRoutes = (req,res) => {
+/*
+lexports.homeRoutes = (req,res) => {
     res.render('index');
 };
+*/

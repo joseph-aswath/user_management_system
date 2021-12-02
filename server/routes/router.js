@@ -1,9 +1,11 @@
 const express = require('express');
 const route = express.Router()
-const services = require('../services/render'); 
+//const services = require('../services/render'); 
 
 
-app.get('/',services.homeRoutes);
+app.get('/index',(req,res)=>{
+    res.render('index');
+});
 
 app.get('/add-user',(req,res)=>{
     res.render('add_user');  
